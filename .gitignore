@@ -1,0 +1,21 @@
+# Private evidence / exports
+.env
+.env.*
+secrets/
+private/
+real-client-data/
+*.pem
+*.key
+
+# Generated output
+output/*
+!output/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/

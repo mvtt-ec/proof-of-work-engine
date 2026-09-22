@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proof of Work Item",
+  "type": "object",
+  "required": ["id","client","project","problem","work_completed","before","after","metrics","evidence","claim_status","content_ready"],
+  "properties": {
+    "id": {"type":"string"},
+    "client": {"type":"string"},
+    "project": {"type":"string"},
+    "problem": {"type":"string"},
+    "work_completed": {"type":"array","items":{"type":"string"}},
+    "before": {"type":"object"},
+    "after": {"type":"object"},
+    "metrics": {"type":"object"},
+    "evidence": {"type":"array"},
+    "claim_status": {"enum":["draft","needs_review","verified","rejected"]},
+    "content_ready": {"type":"boolean"},
+    "permission": {"enum":["internal-only","sanitized-public","public-approved"]},
+    "notes": {"type":"string"}
+  }
+}

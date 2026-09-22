@@ -1,0 +1,39 @@
+{
+  "id": "proof-example-local-seo",
+  "client": "Example Business",
+  "project": "Local SEO Optimization",
+  "problem": "The fictional business had incomplete local profiles and inconsistent service information.",
+  "work_completed": [
+    "Standardized business information across sample listings",
+    "Completed missing service fields",
+    "Updated business categories and descriptions",
+    "Created a review-request workflow"
+  ],
+  "before": {"listing_completeness": "62%"},
+  "after": {"listing_completeness": "96%"},
+  "metrics": {
+    "listing_completeness_change": {
+      "value": 34,
+      "before": 62,
+      "after": 96,
+      "unit": "percentage_points",
+      "window": "synthetic sample",
+      "source": "evidence-example-audit-export",
+      "verification": "verified"
+    }
+  },
+  "evidence": [
+    {
+      "id": "evidence-example-audit-export",
+      "type": "report",
+      "source": "synthetic://example/local-seo-audit",
+      "proves": "Sample before/after listing completeness values.",
+      "captured_at": "2026-09-22",
+      "redacted": false
+    }
+  ],
+  "claim_status": "verified",
+  "content_ready": true,
+  "permission": "sanitized-public",
+  "notes": "Synthetic example only. No real client or performance data."
+}
